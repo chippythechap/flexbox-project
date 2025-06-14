@@ -15,9 +15,11 @@ body {
 
 button {
     background-color: #3882f6;
+    color: white;
     border: white solid 1px;
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 4px 16px;
+    margin: 8px 0;
 }
 
 h1 {
@@ -30,41 +32,104 @@ h2 {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+
 .header, .hero, .footer {
     background-color: #1f2937;
     color: #f9faf8;
     display: flex;
-    justify-content: space-between;
+}
+
+.header {
+    height: 82px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .links {
+    list-style-type: none;
     display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.footer {
+    height: 82px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    padding: 12% 12% 8% 12%;
+    display: flex;
+    gap: 32px;
+
+}
+
+.hero_left {
+    flex: 1;
+}
+
+.hero_left button {
+    border: none;
 }
 
 .hero_right {
-    background-color: #e5e7eb;
+    background-color: darkgrey;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main1, .main3 {
     background-color: white;
+    padding: 4% 8%;
 }
 
 .main2 {
+    padding: 8% 16%;
     background-color: #e5e7eb;
 }
 
+.main3 {
+    padding: 6% 12% 13% 12%;
+}
+
 .content {
+    padding: 4%;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .contentbox {
+    width: 160px;
     display: flex;
     flex-direction: column;
+    gap: 8px;
+
 }
 
 .blue-border {
-    border: solid #3882f6 2px;
+    flex: 1 1 160px;
+    border: solid #3882f6 3px;
     border-radius: 8px;
+}
+
+.centered {
+    text-align: center;
 }
 
 .quote_text {
@@ -73,6 +138,15 @@ h2 {
     color: #1f2937;
 }
 
-.footer {
-    justify-content: center;
+.author {
+    text-align: right;
+}
+
+.blue_box {
+    background-color: #3882f6;
+    color: white;
+    padding: 4%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
 }
